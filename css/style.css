@@ -1,38 +1,140 @@
-body {
-  font-family: Arial, sans-serif;
+/* ----------------------
+   GENERAL STYLES
+---------------------- */
+* {
   margin: 0;
   padding: 0;
-  background: #f2f2f2;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
+body {
+  line-height: 1.6;
+  background-color: #FFFFFF;
+  color: #0D3B66;
+}
+
+/* ----------------------
+   HEADER
+---------------------- */
 header {
-  background: #222;
-  color: white;
-  padding: 20px;
   text-align: center;
+  padding: 2rem 1rem;
 }
 
-nav a {
-  color: white;
-  margin: 0 10px;
+header .logo {
+  display: block;
+  margin: 0 auto 0.5rem auto; /* space below logo */
+  max-width: 250px;
+}
+
+header .divider {
+  width: 375px;               /* 2.5 times longer */
+  height: 4px;
+  background-color: #0D3B66;
+  margin: 0 auto 5rem auto;   /* still centered with space below */
+}
+
+
+header h1 {
+  font-size: 2.5rem;
+  color: #0D3B66;
+  margin-bottom: 1rem;
+}
+
+header nav {
+  margin-bottom: 2rem;
+}
+
+header nav a {
+  color: #F4D35E;
+  margin: 0 1rem;
   text-decoration: none;
+  font-weight: bold;
 }
 
-main {
-  padding: 20px;
+header nav a:hover {
+  color: #FFFFFF;
 }
 
-section {
-  background: white;
-  padding: 20px;
-  margin: 20px 0;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-footer {
-  background: #222;
-  color: white;
+/* ----------------------
+   HERO / WELCOME
+---------------------- */
+section#home {
   text-align: center;
-  padding: 10px;
+  padding: 4rem 1rem;
+  background-color: #F8F8F8;
+}
+
+section#home h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+section#home p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #F4D35E;
+  color: #0D3B66;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #e6c84c;
+}
+
+
+/* ----------------------
+   SECTIONS (ABOUT, SERVICES, CONTACT)
+---------------------- */
+section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+}
+
+section h2 {
+  font-size: 1.8rem;
+  color: #0D3B66;
+  margin-bottom: 1rem;
+}
+
+section p {
+  margin-bottom: 1rem;
+}
+
+/* ----------------------
+   FOOTER
+---------------------- */
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #0D3B66;
+  color: #FFFFFF;
+  margin-top: 2rem;
+}
+
+/* ----------------------
+   RESPONSIVE
+---------------------- */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  section#home h2 {
+    font-size: 1.5rem;
+  }
+
+  section {
+    padding: 2rem 1rem;
+  }
 }
