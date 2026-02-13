@@ -30,11 +30,10 @@ header .logo {
 
 header .divider {
   width: 375px;               /* 2.5 times longer */
-  height: 4px;
-  background-color: #0D3B66;
-  margin: 0 auto 5rem auto;   /* still centered with space below */
+  height: 3px;                /* thin, elegant */
+  background-color: #0D3B66; 
+  margin: 0 auto 1rem auto;   /* minimal spacing below logo */
 }
-
 
 header h1 {
   font-size: 2.5rem;
@@ -44,17 +43,39 @@ header h1 {
 
 header nav {
   margin-bottom: 2rem;
+  font-size: 1.1rem;
 }
 
 header nav a {
-  color: #F4D35E;
-  margin: 0 1rem;
+  color: #F4D35E;        /* same as before */
+  margin: 0 0.5rem;
   text-decoration: none;
   font-weight: bold;
+  transition: color 0.3s;
 }
 
 header nav a:hover {
-  color: #FFFFFF;
+  color: #FFFFFF;        /* same hover effect as before */
+}
+
+
+/* ----------------------
+   TOP CLICKABLE LINKS
+---------------------- */
+.top-links {
+  margin: 0.5rem 0 1rem 0;     /* minimal spacing, keeps header clean */
+}
+
+.top-links a {
+  color: #0D3B66;              /* match your text color */
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 0.5rem;
+  transition: color 0.3s;
+}
+
+.top-links a:hover {
+  color: #F4D35E;              /* highlight on hover */
 }
 
 /* ----------------------
@@ -90,7 +111,6 @@ section#home p {
 .btn:hover {
   background-color: #e6c84c;
 }
-
 
 /* ----------------------
    SECTIONS (ABOUT, SERVICES, CONTACT)
