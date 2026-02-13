@@ -158,7 +158,38 @@ footer {
     padding: 2rem 1rem;
   }
 }
-.link-buttons a {
-  margin: 0 3rem; /* space on left and right of each button */
+ /* Make buttons full width on mobile */
+  .link-button {
+    display: block;
+    width: 80%;
+    margin: 1rem auto; /* center on mobile */
+  }
+}
+
+/* ----------------------
+   LINKS PAGE BUTTONS
+---------------------- */
+.link-buttons {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.link-buttons a,
+.link-button {
+  display: inline-block;
+  margin: 1rem 0;
+  padding: 14px 28px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  background-color: #0D3B66; /* church primary color */
+  color: #F4D35E; /* accent color for text */
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.link-buttons a:hover,
+.link-button:hover {
+  background-color: #0a2a4d; /* slightly darker on hover */
 }
 
