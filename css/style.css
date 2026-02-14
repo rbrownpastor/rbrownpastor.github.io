@@ -24,15 +24,15 @@ header {
 
 header .logo {
   display: block;
-  margin: 0 auto 0.5rem auto; /* space below logo */
+  margin: 0 auto 0.5rem auto;
   max-width: 250px;
 }
 
 header .divider {
-  width: 375px;               /* 2.5 times longer */
-  height: 3px;                /* thin, elegant */
-  background-color: #0D3B66; 
-  margin: 0 auto 1rem auto;   /* minimal spacing below logo */
+  width: 375px; /* 2.5 times longer than standard */
+  height: 3px;
+  background-color: #0D3B66;
+  margin: 0 auto 1rem auto;
 }
 
 header h1 {
@@ -47,7 +47,7 @@ header nav {
 }
 
 header nav a {
-  color: #F4D35E;        /* same as before */
+  color: #F4D35E;
   margin: 0 0.5rem;
   text-decoration: none;
   font-weight: bold;
@@ -55,27 +55,7 @@ header nav a {
 }
 
 header nav a:hover {
-  color: #FFFFFF;        /* same hover effect as before */
-}
-
-
-/* ----------------------
-   TOP CLICKABLE LINKS
----------------------- */
-.top-links {
-  margin: 0.5rem 0 1rem 0;     /* minimal spacing, keeps header clean */
-}
-
-.top-links a {
-  color: #0D3B66;              /* match your text color */
-  text-decoration: none;
-  font-weight: bold;
-  margin: 0 0.5rem;
-  transition: color 0.3s;
-}
-
-.top-links a:hover {
-  color: #F4D35E;              /* highlight on hover */
+  color: #FFFFFF;
 }
 
 /* ----------------------
@@ -132,41 +112,6 @@ section p {
 }
 
 /* ----------------------
-   FOOTER
----------------------- */
-footer {
-  text-align: center;
-  padding: 2rem 1rem;
-  background-color: #0D3B66;
-  color: #FFFFFF;
-  margin-top: 2rem;
-}
-
-/* ----------------------
-   RESPONSIVE
----------------------- */
-@media (max-width: 768px) {
-  header h1 {
-    font-size: 2rem;
-  }
-
-  section#home h2 {
-    font-size: 1.5rem;
-  }
-
-  section {
-    padding: 2rem 1rem;
-  }
-}
- /* Make buttons full width on mobile */
-  .link-button {
-    display: block;
-    width: 80%;
-    margin: 1rem auto; /* center on mobile */
-  }
-}
-
-/* ----------------------
    LINKS PAGE BUTTONS
 ---------------------- */
 .link-buttons {
@@ -181,8 +126,8 @@ footer {
   padding: 14px 28px;
   font-size: 1.2rem;
   text-decoration: none;
-  background-color: #0D3B66; /* church primary color */
-  color: #F4D35E; /* accent color for text */
+  background-color: #0D3B66;
+  color: #F4D35E;
   border-radius: 6px;
   font-weight: bold;
   transition: background-color 0.3s ease;
@@ -190,9 +135,12 @@ footer {
 
 .link-buttons a:hover,
 .link-button:hover {
-  background-color: #0a2a4d; /* slightly darker on hover */
+  background-color: #0a2a4d;
 }
 
+/* ----------------------
+   CALENDAR
+---------------------- */
 .calendar-container {
   margin-top: 2rem;
 }
@@ -201,11 +149,60 @@ footer {
   width: 100%;
   max-width: 100%;
   border-radius: 8px;
+  height: 600px;
 }
+
+/* ----------------------
+   STORIES PLACEHOLDER
+---------------------- */
 .story-placeholder {
   margin-top: 2rem;
   padding: 2rem;
   background-color: #f4f4f4;
   border-radius: 8px;
   text-align: center;
+}
+
+/* ----------------------
+   FOOTER
+---------------------- */
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #0D3B66;
+  color: #FFFFFF;
+  margin-top: 2rem;
+}
+
+/* ----------------------
+   RESPONSIVE
+---------------------- */
+@media (max-width: 768px) {
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  section#home h2 {
+    font-size: 1.5rem;
+  }
+
+  section {
+    padding: 2rem 1rem;
+  }
+
+  /* Make link buttons large and mobile-friendly */
+  .link-buttons a,
+  .link-button {
+    display: block;
+    width: 90%;
+    margin: 1rem auto;
+    font-size: 1.2rem;
+    padding: 16px;
+  }
+
+  /* Make calendar iframe shorter for mobile */
+  .calendar-container iframe {
+    height: 500px;
+  }
 }
