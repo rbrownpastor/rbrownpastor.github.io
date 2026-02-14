@@ -193,3 +193,12 @@ footer {
   background-color: #0a2a4d; /* slightly darker on hover */
 }
 
+.calendar-container {
+  margin-top: 2rem;
+}
+
+.calendar-container iframe {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 8px;
+}
