@@ -182,6 +182,42 @@ footer {
   header h1 {
     font-size: 2rem;
   }
+/* ----------------------
+   STORIES PAGE LINKS
+---------------------- */
+.story-list {
+  list-style: none;
+  padding: 0;
+  max-width: 600px;
+  margin: 2rem auto;
+}
+
+.story-list li {
+  margin: 1rem 0;
+}
+
+.story-list a {
+  display: block;
+  background-color: #0D3B66;
+  color: #F4D35E;
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.story-list a:hover {
+  background-color: #0a2a4d;
+}
+
+@media (max-width: 768px) {
+  .story-list a {
+    font-size: 1rem;
+    padding: 10px 15px;
+  }
+}
 
   section#home h2 {
     font-size: 1.5rem;
