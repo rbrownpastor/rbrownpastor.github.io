@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{TITLE}} - Fanshawe FWB Church</title>
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+
+<header>
+  <h1>Fanshawe Free Will Baptist Church</h1>
+  <nav>
+    <a href="../../index.html">Home</a> |
+    <a href="../../messages/index.html">Messages</a>
+  </nav>
+</header>
+
+<section class="message-page">
+  <h2>{{TITLE}}</h2>
+  <p><strong>Date:</strong> {{DATE}}</p>
+  <p><strong>Speaker:</strong> {{SPEAKER}}</p>
+  <p><strong>Type:</strong> {{TYPE}}</p>
+  <p><strong>Scripture:</strong> {{SCRIPTURE}}</p>
+  <p>{{SUMMARY}}</p>
+
+  <!-- Optional video -->
+  <div class="video-container">
+    {{VIDEO_EMBED}}
+  </div>
+
+  <!-- Optional notes PDF -->
+  <p><a href="{{NOTES_PDF}}" target="_blank">Download Notes PDF</a></p>
+
+  <h3>Key Takeaways</h3>
+  <p>{{KEY_POINTS}}</p>
+
+  <h3>Reflection Questions</h3>
+  <p>{{REFLECTION}}</p>
+</section>
+
+</body>
+</html>
