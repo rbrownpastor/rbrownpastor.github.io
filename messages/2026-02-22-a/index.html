@@ -30,16 +30,16 @@ case "$OPTION" in
 
     # Copy template and replace placeholders
     cat messages/template.html \
-    | sed "s|{{TITLE}}|$MSG|g" \
-    | sed "s|{{DATE}}|$DATE|g" \
-    | sed "s|{{SPEAKER}}|$SPEAKER|g" \
-    | sed "s|{{TYPE}}|$TYPE|g" \
-    | sed "s|{{SCRIPTURE}}|$SCRIPTURE|g" \
-    | sed "s|{{SUMMARY}}|$SUMMARY|g" \
-    | sed "s|{{VIDEO_EMBED}}|$VIDEO_EMBED|g" \
-    | sed "s|{{NOTES_PDF}}|$NOTES_PDF|g" \
-    | sed "s|{{KEY_POINTS}}|$KEY_POINTS|g" \
-    | sed "s|{{REFLECTION}}|$REFLECTION|g" \
+    | sed "s|a|$MSG|g" \
+    | sed "s|2026-02-22|$DATE|g" \
+    | sed "s|a|$SPEAKER|g" \
+    | sed "s|a|$TYPE|g" \
+    | sed "s|a|$SCRIPTURE|g" \
+    | sed "s|a|$SUMMARY|g" \
+    | sed "s||$VIDEO_EMBED|g" \
+    | sed "s||$NOTES_PDF|g" \
+    | sed "s|a|$KEY_POINTS|g" \
+    | sed "s|a|$REFLECTION|g" \
     > "$HTML_FILE"
 
     echo "✅ Created message page: $HTML_FILE"
