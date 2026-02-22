@@ -242,3 +242,37 @@ footer {
     height: 500px;
   }
 }
+.message-page {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+  text-align: center;
+}
+
+.message-page img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+}
+
+.message-page h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #0D3B66;
+}
+
+.message-page p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .message-page h2 {
+    font-size: 1.5rem;
+  }
+  .message-page p {
+    font-size: 1rem;
+  }
+}

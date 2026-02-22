@@ -31,17 +31,19 @@ case "$OPTION" in
   HTML_FILE="$FOLDER/index.html"
 
   # Generate HTML from template
-  sed -e "s|__TITLE__|${MSG//-/ }|g" \
-      -e "s|__DATE__|$DATE|g" \
-      -e "s|__SPEAKER__|$SPEAKER|g" \
-      -e "s|__TYPE__|$TYPE|g" \
-      -e "s|__SCRIPTURE__|$SCRIPTURE|g" \
-      -e "s|__SUMMARY__|$SUMMARY|g" \
-      -e "s|__VIDEO__|$VIDEO_EMBED|g" \
-      -e "s|__PDF__|$NOTES_PDF|g" \
-      -e "s|__KEY_POINTS__|$KEY_POINTS|g" \
-      -e "s|__REFLECTION__|$REFLECTION|g" \
-      messages/template/template.html > "$HTML_FILE"
+# Replace in your ADD MESSAGE section
+sed -e "s|__TITLE__|${MSG//-/ }|g" \
+    -e "s|__DATE__|$DATE|g" \
+    -e "s|__SPEAKER__|$SPEAKER|g" \
+    -e "s|__TYPE__|$TYPE|g" \
+    -e "s|__SCRIPTURE__|$SCRIPTURE|g" \
+    -e "s|__SUMMARY__|$SUMMARY|g" \
+    -e "s|__VIDEO__|$VIDEO_EMBED|g" \
+    -e "s|__PDF__|$NOTES_PDF|g" \
+    -e "s|__KEY_POINTS__|$KEY_POINTS|g" \
+    -e "s|__REFLECTION__|$REFLECTION|g" \
+    -e "s|__IMAGE__|$IMAGE|g" \
+    messages/template/template.html > "$HTML_FILE"
 
   echo "✅ Created message page: $HTML_FILE"
 
